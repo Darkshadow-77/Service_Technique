@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header style="text-align='center'; padding: 20px; background-color: #f8f9fa;">
+        <h1>Tech MASTERS</h1>
+    </header>
     <div class="container">
         <h1>Welcome to our website</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
