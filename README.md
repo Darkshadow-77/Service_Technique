@@ -4,8 +4,9 @@
 .Les classes seront écrites suivant cette norme ma_classe(tout en minuscule et _ remplace les espaces Ex: a_new_class)
 .Le code CSS sera commenté  pour pouvoir se retouver et les styles des différentes pages seront seront séparés (
     EX:
+    
     /*Page d'acceuil*/
-    * {
+    body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
