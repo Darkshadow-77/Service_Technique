@@ -1,4 +1,4 @@
-const scrollable_background = document.querySelector(".class");
+const scrollable_background = document.querySelector(".accueil");
 
 window.addEventListener("scroll", function() {
     let offset = window.pageYOffset;
