@@ -2,7 +2,7 @@
  Projet qui présente une application web multipage de prestation de services techniques allant de l'informatique à la mécanique et au dépannage
  Les conventionds de code en HTML et CSS
 .Les classes seront écrites suivant cette norme ma_classe(tout en minuscule et _ remplace les espaces Ex: a_new_class)
-.Les classe dont le nom dépassse les 10 caratères seront remplacés par des abréviations(Ex: bouton_decouvrir_plus -> btn_dec_pls )
+.Les classe dont le nom dépassse les 12 caratères seront remplacés par des abréviations(Ex: bouton_decouvrir_plus -> btn_dec_pls )
 .Le code CSS sera commenté  pour pouvoir se retouver et les styles des différentes pages seront seront séparés (
     EX:
     
