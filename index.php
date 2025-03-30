@@ -24,9 +24,20 @@
     </header>
     <main class="sect_princ">
         <section class="accueil">
-            <h1 class="titre_princ">Accedez des de services de qualité</h1>
-            <p class="txt_princ">Lorem_ipsum_dolor_sit_amet_consectetur.</p>
+            <h1 class="titre_princ">
+                Bienvenu sur <br>
+             <span class="titre_acceuil">T-Service</span>
+            </h1>
+            <p class="txt_princ">Votre service Technique Informatique,<br> Réseaux et Automobile disponible h24</p>
             <button class="btn_dec_pls">Decouvrir plus</button>
+        </section>
+        <section class="description">
+            <h2 class="titre_des">
+            💻🔧🚗 Qui sommes-nous ?
+            </h2>
+            <p class="text_des">
+            Nous sommes une entreprise spécialisée dans le support technique en informatique, réseaux et automobile. Grâce à notre expertise, nous offrons des solutions innovantes pour garantir le bon fonctionnement de vos systèmes informatiques, de vos infrastructures réseau et de vos équipements automobiles connectés.
+            </p>
         </section>
     </main>
     <footer class="foot">
