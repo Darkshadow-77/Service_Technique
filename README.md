@@ -2,6 +2,7 @@
  Projet qui présente une application web multipage de prestation de services techniques allant de l'informatique à la mécanique et au dépannage
  Les conventionds de code en HTML et CSS
 .Les classes seront écrites suivant cette norme ma_classe(tout en minuscule et _ remplace les espaces Ex: a_new_class)
+.Les classe dont le nom dépassse les 5 caratères seront remplacés par des abréviations
 .Le code CSS sera commenté  pour pouvoir se retouver et les styles des différentes pages seront seront séparés (
     EX:
     
@@ -27,6 +28,7 @@
     padding: 10px;
     }
 ) 
+ .Les id suivent les memes règles que les classes
  .Prévenir avant de commiter toute modification dans le repository
  .Pour pouvoir utiliser les lignes de commande GIT installer https://git-scm.com/downloads
  .Respecter les standards de nommination et de codage dans le fichiers php
