@@ -74,14 +74,16 @@ body {
 }
 
 .btn_cta:hover {
-    background-color: #0056b3;
+    background-color: darkred;
 }
 
 /* Section principale */
-.sect_princ {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: #f8f9fa;
+.accueil {
+    padding-top: 30px;
+    padding-left: 50px;
+    height: 500px;
+    background-image: url("img/fond_acceuil.jpeg");
+    background-position: center;
 }
 
 .titre_princ {
@@ -111,9 +113,5 @@ body {
 }
 
 .btn_dec_pls:hover {
-    background-color: darkred;
-}
-
-.acceuil {
-    background-image: url("img/fond_acceuil.jpeg");
+    background-color: #0056b3;
 }
