@@ -35,9 +35,14 @@
             <h2 class="titre_des">
             💻🔧🚗 Qui sommes-nous ?
             </h2>
+            <div class="des_box">
             <p class="text_des">
             Nous sommes une entreprise spécialisée dans le support technique en informatique, réseaux et automobile. Grâce à notre expertise, nous offrons des solutions innovantes pour garantir le bon fonctionnement de vos systèmes informatiques, de vos infrastructures réseau et de vos équipements automobiles connectés.
             </p>
+            </div>
+            <img src="img/fond_description.jpeg" alt="Description" class="img_des">
+            <button class="btn_cta">A propos</button>
+
         </section>
     </main>
     <footer class="foot">

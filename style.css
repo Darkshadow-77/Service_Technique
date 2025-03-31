@@ -66,6 +66,7 @@ body {
 .btn_cta {
     background-color: red;
     color: white;
+    font-family: 'Courier New', Courier, monospace;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -127,12 +128,38 @@ body {
     text-align: right;
     padding-top: 30px;
     padding-right: 50px;
+    margin-top: 30px;
+    width: 80%;
     height: 500px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-self: end;
+    align-items: flex-end;
+    border-radius: 250px 0px 0px 250px;
+    background: linear-gradient(to right, rgb(255, 12, 12), rgb(17, 116, 255));
 }
 
 .titre_des{
     font-size: 36px;
     color: red;
+}
+
+.des_box{
+    width: 50%;
+    text-wrap: wrap;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    z-index: 2;
+}
+
+.img_des {
+    height: 100%;
+    border-radius: 250px;
+    position: absolute;
+    left: -100px;
+    top: 0;
 }
 /*footer*/
 .reseaux_sociaux {
