@@ -41,8 +41,39 @@
             </p>
             </div>
             <img src="img/fond_description.jpeg" alt="Description" class="img_des">
-            <button class="btn_cta">A propos</button>
-
+            <button class="btn_cta">A propos de nous</button>
+        </section>
+        <section class="contact">
+            <h2 class="titre_contact">
+            Besoin d’aide ? Une question ? <br> Un avis à partager ?
+            </h2>
+            <div class="des_box">
+                <p class="text_contact">
+                Chez T-Service, votre satisfaction est notre priorité ! Que ce soit pour une assistance technique, un conseil, une demande d’intervention ou simplement pour partager votre avis, nous sommes à votre écoute.
+                </p>
+            </div>
+            <img src="img/fond_contact.jpeg" alt="Contact" class="img_contact">
+            <button class="btn_dec_pls">Contactez-nous</button>
+        </section>
+        <section class="services">
+            <h2 class="titre_srv">
+                Visitez nos différnts Services
+                <div class="srv_box">
+                    <img src="" alt="">
+                    <p class="nom_service"></p>
+                    <a href="#"><button class="visit">Visiter</button></a>
+                </div>
+                <div class="srv_box">
+                    <img src="" alt="">
+                    <p class="nom_service"></p>
+                    <a href="#"><button class="visit">Visiter</button></a>
+                </div>
+                <div class="srv_box">
+                    <img src="" alt="">
+                    <p class="nom_service"></p>
+                    <a href="#"><button class="visit">Visiter</button></a>
+                </div>
+            </h2>
         </section>
     </main>
     <footer class="foot">

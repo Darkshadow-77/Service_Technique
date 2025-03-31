@@ -161,6 +161,30 @@ body {
     left: -100px;
     top: 0;
 }
+
+.contact{
+    padding-top: 30px;
+    padding-left: 50px;
+    margin-top: 30px;
+    position: relative;
+    width: 80%;
+    height: 500px;
+    border-radius: 0px 250px 250px 0px;
+    background: linear-gradient(to right, rgb(255, 12, 12), rgb(17, 116, 255));
+}
+
+.titre_contact{
+    font-size: 36px;
+    color: #1d8aff;
+}
+
+.img_contact {
+    height: 100%;
+    border-radius: 250px;
+    position: absolute;
+    right: -100px;
+    top: 0;
+}
 /*footer*/
 .reseaux_sociaux {
     display: flex;
