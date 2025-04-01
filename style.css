@@ -185,6 +185,45 @@ body {
     right: -100px;
     top: 0;
 }
+
+.services{
+    text-align: center;
+    margin-block: 30px;
+}
+.srv_pcp_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.srv_box{
+    width: 300px;
+    height: 450px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.nom_service{
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.srv_img{
+    width: 100%;
+}
+.visit{
+    background-color: #0056b3;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.visit:hover{
+    background-color: #013d7d;
+}
 /*footer*/
 .reseaux_sociaux {
     display: flex;
@@ -206,4 +245,60 @@ body {
     padding: 20px;
     text-align: center;
     border-top: 1px solid #ccc;
+}
+/*Services*/
+.srv_pr_bcp{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-block: 30px;
+    border-top: 1px solid #ccc;
+    border-bottom: 5px solid rgb(17, 116, 255);
+    background: linear-gradient(45deg, rgb(17, 116, 255), rgb(255, 12, 12));
+}
+.img_srv{
+    height: 100%;
+}
+
+.srv_des_box{
+    height: 100%;
+    border-left: 100px solid rgb(17, 116, 255);
+    padding-left: 20px;
+}
+
+.tre_srv{
+    position: relative;
+    left: -90px;
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 58, 58);
+    font-family: 'Courier New', Courier, monospace;
+    width: fit-content;
+    height: fit-content;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-radius: 0px 20px 20px 0px;
+    text-decoration: underline;
+    text-decoration-color: rgb(17, 116, 255);
+    padding: 10px 20px;
+}
+
+.apply{
+    padding: 10px 20px;
+    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.des_srv{
+    font-size: 19px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }

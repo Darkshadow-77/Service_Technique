@@ -1,0 +1,13 @@
+<header class="bar_nav">
+    <div class="logo_site"><img src="../img/logo.jpeg" alt="T-Service" class="logo">
+    <div class="titre_site"><h1 class="titre">T-Service</h1></div>
+    </div>
+        <nav class="contenu_nav">
+            <ul class="liens_nav">
+                <li><a href="#a_propos" class="lien">A propos</a></li>
+                <li><a href="../pages/services.php" class="lien">Services</a></li>
+                <li><a href="#contact" class="lien">Contact</a></li>
+            </ul>
+            <button class="btn_cta">Commencer</button>
+        </nav>
+    </header>

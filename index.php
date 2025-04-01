@@ -9,14 +9,14 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="bar_nav">
+<header class="bar_nav">
     <div class="logo_site"><img src="img/logo.jpeg" alt="T-Service" class="logo">
     <div class="titre_site"><h1 class="titre">T-Service</h1></div>
     </div>
         <nav class="contenu_nav">
             <ul class="liens_nav">
                 <li><a href="#a_propos" class="lien">A propos</a></li>
-                <li><a href="#services" class="lien">Services</a></li>
+                <li><a href="./pages/services.php" class="lien">Services</a></li>
                 <li><a href="#contact" class="lien">Contact</a></li>
             </ul>
             <button class="btn_cta">Commencer</button>
@@ -57,23 +57,25 @@
         </section>
         <section class="services">
             <h2 class="titre_srv">
-                Visitez nos différnts Services
-                <div class="srv_box">
-                    <img src="" alt="">
-                    <p class="nom_service"></p>
-                    <a href="#"><button class="visit">Visiter</button></a>
-                </div>
-                <div class="srv_box">
-                    <img src="" alt="">
-                    <p class="nom_service"></p>
-                    <a href="#"><button class="visit">Visiter</button></a>
-                </div>
-                <div class="srv_box">
-                    <img src="" alt="">
-                    <p class="nom_service"></p>
-                    <a href="#"><button class="visit">Visiter</button></a>
-                </div>
+                Visitez nos différents Services
             </h2>
+            <div class="srv_pcp_box">
+            <div class="srv_box">
+                    <img src="img/auto_service.jpeg" alt="Service Automobile" class="srv_img">
+                    <p class="nom_service">Service Automobile</p>
+                    <a href="#"><button class="visit">Visiter</button></a>
+                </div>
+                <div class="srv_box">
+                    <img src="img/assistance_service.jpeg" alt="Assistance technique" class="srv_img">
+                    <p class="nom_service">Assistance technique</p>
+                    <a href="#"><button class="visit">Visiter</button></a>
+                </div>
+                <div class="srv_box">
+                    <img src="img/network_service.jpeg" alt="Service Réseaux" class="srv_img">
+                    <p class="nom_service">Services Réseaux</p>
+                    <a href="#"><button class="visit">Visiter</button></a>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="foot">
