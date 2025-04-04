@@ -19,7 +19,7 @@
                 <li><a href="./pages/services.php" class="lien">Services</a></li>
                 <li><a href="#contact" class="lien">Contact</a></li>
             </ul>
-            <button class="btn_cta">Commencer</button>
+            <button class="btn_cta"><a href="./pages/inscription.php">Commencer</a></button>
         </nav>
     </header>
     <main class="sect_princ">
@@ -87,4 +87,13 @@
         <p class="txt_foot">© 2023 T-Service. Tous droits réservés.</p>
     </footer>
 </body>
+<script>
+    const scrollable_background = document.querySelector(".accueil");
+
+window.addEventListener("scroll", function() {
+    let offset = window.pageYOffset;
+    console.log(offset);
+    scrollable_background.style.backgroundPositionY = offset * (-0.7) + "px";
+});
+</script>
 </html>

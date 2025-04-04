@@ -8,6 +8,6 @@
                 <li><a href="../pages/services.php" class="lien">Services</a></li>
                 <li><a href="#contact" class="lien">Contact</a></li>
             </ul>
-            <button class="btn_cta">Commencer</button>
+            <button class="btn_cta"><a href="./inscription.php">Commencer</a></button>
         </nav>
     </header>

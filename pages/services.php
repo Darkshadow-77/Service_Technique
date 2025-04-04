@@ -28,6 +28,11 @@ try {
     require_once('./page_components/header.php');
     ?>
     <main class="pcp_spg_box">
+        <h1 class="tre_pg_srv">
+            <span>🔧
+            Nos Services
+            ⚙️</span>
+        </h1>
     <?php
     foreach($result as $service):?>
         <section class="srv_pr_bcp">
