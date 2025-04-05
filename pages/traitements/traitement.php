@@ -60,7 +60,7 @@ if (
 // Fonction d'enregistrement de l'erreur et redirection
 function setErreur($message) {
     $_SESSION['erreur'] = $message;
-    header("Location: inscription.php");
+    header("Location: ../inscription.php");
     exit;
 }
 ?>
@@ -70,12 +70,12 @@ function setErreur($message) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription résussie</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../style.css">
 </head>
 <body class="ins_pcp_box" style="margin-top:300px;">
     <h1 style="color:white;">Inscription réussie</h1>
     <p style="color:white;">Bienvenue, <?php echo htmlspecialchars($_POST['firstname']); ?> !</p>
-    <button class="btn_cta"><a href="../index.php">Se connecter automatiquement</a></button>
+    <button class="btn_cta"><a href="../../index.php">Se connecter automatiquement</a></button>
     
 </body>
 </html>

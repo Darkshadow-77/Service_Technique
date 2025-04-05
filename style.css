@@ -1,8 +1,7 @@
 /* Réinitialisation générale */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Barre de navigation */
@@ -366,7 +365,7 @@ body {
     height:30px;
     outline: 0px;
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid white;
     background-color: #a0ccfc4a;
     font-size: 19px;
     font-family: 'Courier New', sans-serif;
@@ -377,6 +376,25 @@ body {
 
 .field::placeholder{
     color: rgb(209, 209, 209);
+}
+
+.pass{
+    display: flex;
+}
+.pass .field{
+    width: 270px;
+}
+
+.eye{
+    display: block;
+    padding-top: 8px;
+    width: 30px;
+    height: 24px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #a0ccfc4a;
+    border-bottom: 2px solid white;
 }
 
 .btn_sub{
@@ -399,4 +417,100 @@ body {
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
     color: white;
+}
+/*contact*/
+
+/* Container principal pour la page de contact */
+.ctn_main{
+    background: linear-gradient(to right, rgb(255, 12, 12), rgb(17, 116, 255));
+    padding: 50px;
+}
+.container_contact {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url("img/form_font.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.container_contact h2{
+    text-align: center;
+}
+
+/* Section des informations de l'entreprise */
+.info_entreprise {
+    margin-bottom: 40px;
+    background-color: white;
+}
+
+.info_entreprise h2 {
+    color: #ff3a3a; /* Rouge */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.info_entreprise p {
+    color: #888888;
+    font-size: 1.2rem;
+}
+
+/* Formulaire de contact */
+.form_message {
+    margin-top: 30px;
+}
+
+.form_message h2 {
+    color: #007BFF; /* Bleu */
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.form_group {
+    margin-bottom: 20px;
+}
+
+.form_group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form_group input,
+.form_group textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form_group input:focus,
+.form_group textarea:focus {
+    border-color: #0057b8; /* Bleu */
+}
+
+.form_group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.form_group button {
+    padding: 12px 20px;
+    background-color: #d62828; /* Rouge */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form_group button:hover {
+    background-color: #c11919; /* Rouge plus foncé */
 }

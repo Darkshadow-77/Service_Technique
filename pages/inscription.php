@@ -14,7 +14,7 @@ session_start();
 <body>
     <?php require_once(__DIR__."/page_components/header.php")?>
     <main class="ins_pcp_box">
-        <form action="traitement.php" method="post" class="ins_form">
+        <form action="./traitements/traitement.php" method="post" class="ins_form">
             <div>
             <label for="prenom">Nom :</label><br>
             <input type="text" name="surname" id="nom" class="field" oninput="this.value = this.value.toUpperCase();" required placeholder="DUPONT"><br>  
@@ -29,7 +29,7 @@ session_start();
             </div>
             <div>
             <label for="password">Mot de passe :</label><br>
-            <input type="password" name="password" id="password" class="field" required><br>
+            <div class="pass"><input type="password" name="password" id="password" class="field" required><i class="fa-solid fa-eye eye" onclick="togglePassword()"></i></div>
             </div>
             <div>
             <label for="domain">Domaine :</label><br>
@@ -60,6 +60,19 @@ session_start();
 function capitalizeFirstLetter(input) {
     const value = input.value;
     input.value = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+}
+function togglePassword() {
+    const passwordField = document.getElementById("password");
+    const eyeIcon = document.querySelector(".fa-solid");
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+    } else {
+        passwordField.type = "password";
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+    }
 }
 </script>
 </html>;

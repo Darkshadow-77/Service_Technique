@@ -15,9 +15,10 @@
     </div>
         <nav class="contenu_nav">
             <ul class="liens_nav">
+                <li><a href="index.php" class="lien">Accueil</a></li>
                 <li><a href="#a_propos" class="lien">A propos</a></li>
                 <li><a href="./pages/services.php" class="lien">Services</a></li>
-                <li><a href="#contact" class="lien">Contact</a></li>
+                <li><a href="./pages/contact.php" class="lien">Contact</a></li>
             </ul>
             <button class="btn_cta"><a href="./pages/inscription.php">Commencer</a></button>
         </nav>
