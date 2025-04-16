@@ -514,3 +514,176 @@ body {
 .form_group button:hover {
     background-color: #c11919; /* Rouge plus foncé */
 }
+
+/* --- Page À propos --- */
+
+.a_propos_page {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.a_propos_page h1,
+.a_propos_page h2,
+.a_propos_page h3 {
+    color: #007BFF;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.a_propos_page section {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro */
+.intro_apropos {
+    text-align: center;
+}
+
+.intro_apropos p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* Services */
+.services_detail_apropos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services_detail_apropos li {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 4px solid #007BFF;
+}
+
+.services_detail_apropos p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+/* Valeurs */
+.valeurs_apropos ul {
+    list-style-type: square;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+/* Équipe */
+.equipe_apropos ul {
+    list-style-type: "👤 ";
+    padding-left: 25px;
+    font-size: 16px;
+}
+
+.equipe_apropos li {
+    margin-bottom: 8px;
+}
+
+/* Bouton personnalisé (si besoin) */
+.a_propos_page .btn_cta {
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.a_propos_page .btn_cta:hover {
+    background-color: darkred;
+}
+
+/* Style spécifique pour la page de publication */
+
+/* Formulaire de publication */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="file"] {
+    font-size: 16px;
+}
+
+/* Preview box pour l'image */
+.preview-box {
+    border: 1px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    display: none;
+    margin-top: 15px;
+}
+
+.preview-box img {
+    max-width: 300px;
+    margin-top: 10px;
+    max-height: 200px;
+}
+
+.preview-box span {
+    display: block;
+    margin-top: 10px;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Liste des publications */
+section > div {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007BFF;
+}
+
+section img {
+    max-width: 300px;
+    margin-top: 15px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+section em {
+    color: #666;
+    font-size: 14px;
+}

@@ -5,9 +5,10 @@
         <nav class="contenu_nav">
             <ul class="liens_nav">
                 <li><a href="../index.php" class="lien">Accueil</a></li>
-                <li><a href="#a_propos" class="lien">A propos</a></li>
+                <li><a href="../pages/apropos.php" class="lien">A propos</a></li>
                 <li><a href="../pages/services.php" class="lien">Services</a></li>
                 <li><a href="../pages/contact.php" class="lien">Contact</a></li>
+                <li><a href="../pages/publications_liste.php" class="lien">Publications</a></li>
             </ul>
             <button class="btn_cta"><a href="./inscription.php">Commencer</a></button>
         </nav>
