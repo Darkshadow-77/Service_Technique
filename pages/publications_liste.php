@@ -36,24 +36,26 @@ $publications = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <?php require_once(__DIR__."/page_components/header.php"); ?>
 
-    <main>
+    <main class="main_pub_ctn">
         <h1>📰 Nos Publications</h1>
         <p>Découvrez nos dernières publications sur les services que nous proposons.</p>
         <section class="invit_a_publi">
             <div class="invit">
-                <h2>Vous pouvz publier vous meme puplier ici 👉<a href="./publication.php">Publier</a></h2>
+                <h2>Vous pouvz publier vous-même ici 👉<a href="./publication.php">Publier</a></h2>
             </div>
         </section>
-        <section>
+        <section class="publi_liste">
             <h2>📋 Dernières publications</h2>
+        <div class="list_content">
             <?php foreach ($publications as $pub): ?>
-                <div style="margin-bottom: 30px; border-bottom: 1px solid #ccc; padding-bottom: 20px;">
+                <div class="pub">
                     <h3><?= htmlspecialchars($pub['nom']) ?></h3>
                     <img src="<?= '../uploads/' . htmlspecialchars($pub['img']) ?>" alt="Image" style="width: 300px;"><br>
                     <p><?= nl2br(htmlspecialchars($pub['description'])) ?></p>
                     <p><em>Publié le : <?= date('d M Y, H:i', strtotime($pub['date_publication'])) ?></em></p>
                 </div>
             <?php endforeach; ?>
+        </div>
         </section>
     </main>
 

@@ -17,12 +17,10 @@ if (isset($_SESSION['error'])) {
 <body>
     <?php require_once(__DIR__."/page_components/header.php"); ?>
 
-    <main>
-        <h1>📰Formulaire de publication</h1>
-
-        <!-- Formulaire de publication -->
+    <main class="ins_pcp_box">
+    <h1>Publier un nouveau service</h1>
+      <!-- Formulaire de publication -->
         <section>
-            <h2>Publier un nouveau service</h2>
             <form action="./traitements/traitement2.php" method="POST" enctype="multipart/form-data">
                 <input type="text" name="nom" placeholder="Titre du service/article" required><br><br>
                 <textarea name="description" placeholder="Description..." rows="5" required></textarea><br><br>
