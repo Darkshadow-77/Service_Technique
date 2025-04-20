@@ -42,7 +42,7 @@ try {
             <button class="apply">Souscrire</button>
             </div>
             <img src=<?php echo"../".$service['img']; ?> alt=<?php echo$service['nom']; ?> class="img_srv">
-        </section/>
+        </section>
     <?php
     endforeach; ?>
     </main>
