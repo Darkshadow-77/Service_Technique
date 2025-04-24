@@ -27,10 +27,10 @@ if (
 
     try {
         // Insertion du message dans la base
-        $stmt = $pdo->prepare("INSERT INTO messages (name, email, message, date_sent) 
-                               VALUES (:name, :email, :message, NOW())");
+        $stmt = $pdo->prepare("INSERT INTO messages (nom, email, message, date) 
+                               VALUES (:nom, :email, :message, NOW())");
         $stmt->execute([
-            ':name' => $name,
+            ':nom' => $name,
             ':email' => $email,
             ':message' => $message
         ]);
@@ -45,7 +45,7 @@ if (
 // Fonction d'enregistrement de l'erreur et redirection
 function setErreur($message) {
     $_SESSION['erreur'] = $message;
-    header("Location: ../inscription.php");
+    header("Location: ../contact.php");
     exit;
 }
 ?>
@@ -55,7 +55,7 @@ function setErreur($message) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message envoyé</title>
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../style/style.css">
 </head>
 <body class="ins_pcp_box" style="margin-top:300px;">
     <h1 style="color:white;">Votre message a èté envoyé avec succès</h1>

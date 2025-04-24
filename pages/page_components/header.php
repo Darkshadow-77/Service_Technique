@@ -3,6 +3,7 @@
     <div class="titre_site"><h1 class="titre">T-Service</h1></div>
     </div>
         <nav class="contenu_nav">
+        <button class="menu-toggle">☰</button>
             <ul class="liens_nav">
                 <li><a href="../index.php" class="lien">Accueil</a></li>
                 <li><a href="../pages/apropos.php" class="lien">A propos</a></li>

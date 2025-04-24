@@ -41,7 +41,7 @@ if (
         if (in_array($imgExt, $validExtensions)) {
             // Générer un nom unique pour l'image
             $newImgName = uniqid('', true) . "." . $imgExt;
-            $imgDestination = '../img/uploads/' . $newImgName;
+            $imgDestination = '../../uploads/'.$newImgName;
 
             // Déplacer l'image téléchargée dans le dossier "uploads"
             if (move_uploaded_file($imgTmpName, $imgDestination)) {
@@ -56,26 +56,26 @@ if (
 
                 // Message de succès et redirection
                 $_SESSION['success'] = "Le service a été publié avec succès !";
-                header("Location: ../pages/publications_liste.php");
+                header("Location: ../publications_liste.php");
                 exit;
             } else {
-                $_SESSION['error'] = "Une erreur est survenue lors de l'upload de l'image.";
-                header("Location: ../pages/publication.php");
-                exit;
+                echo "Une erreur est survenue lors de l'upload de l'image :".$_FILES['img']['error'];
+                /*header("Location: ../publication.php");
+                exit;*/
             }
         } else {
             $_SESSION['error'] = "Le type de fichier n'est pas autorisé. Veuillez télécharger une image (jpg, jpeg, png, gif).";
-            header("Location: ../pages/publication.php");
+            header("Location: ../publication.php");
             exit;
         }
     } else {
         $_SESSION['error'] = "Une erreur est survenue lors de l'upload de l'image.";
-        header("Location: ../pages/publication.php");
+        header("Location: ../publication.php");
         exit;
     }
 } else {
     $_SESSION['error'] = "Tous les champs sont obligatoires.";
-    header("Location: ../pages/publication.php");
+    header("Location: ../publication.php");
     exit;
 }
 ?>

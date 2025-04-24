@@ -1,8 +1,5 @@
 <?php
-if (isset($_SESSION['error'])) {
-    echo '<div class="alert alert-danger">' . $_SESSION['error'] . '</div>';
-    unset($_SESSION['error']); // Clear the error message
-}
+session_start();
 ?>
 
 
@@ -12,7 +9,10 @@ if (isset($_SESSION['error'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications - T-Service</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/media_queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../script.js" defer></script>
 </head>
 <body>
     <?php require_once(__DIR__."/page_components/header.php"); ?>
@@ -25,7 +25,7 @@ if (isset($_SESSION['error'])) {
                 <input type="text" name="nom" placeholder="Titre du service/article" required><br><br>
                 <textarea name="description" placeholder="Description..." rows="5" required></textarea><br><br>
                 <label for="img">Sélectionner une image :</label><br>
-                <input type="file" name="image" accept="image/*" id="img" required><br><br>
+                <input type="file" name="img" accept="image/*" id="img" required><br><br>
             <!-- Preview Box -->
             <div class="preview-box" id="preview-box">
                 <p>Prévisualisation de l'image :</p>
@@ -33,6 +33,12 @@ if (isset($_SESSION['error'])) {
                 <span id="file-name"></span>
             </div>
                 <button type="submit" class="btn_cta">Publier</button>
+                <?php
+if (isset($_SESSION['error'])) {
+    echo '<div class="alert alert-danger">' . $_SESSION['error'] . '</div>';
+    unset($_SESSION['error']); // Clear the error message
+}
+?>
             </form>
         </section>
     </main>
